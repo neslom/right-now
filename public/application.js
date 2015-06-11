@@ -5,7 +5,7 @@ socket.on('connect', function () {
 });
 
 socket.on('message', function (message) {
-  //$('.messages').append(JSON.stringify(message) + '<br>');
+  $('.messages').append(JSON.stringify(message) + '<br>');
 });
 
 var $messageInput = $('#special-message');
